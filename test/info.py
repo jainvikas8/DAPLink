@@ -131,6 +131,7 @@ PROJECT_RELEASE_INFO = {
     ('max32625_if',                                 False,      0x0000,     "bin"       ),
     ('sam3u2c_if',                                  False,      0x0000,     "bin"       ),
     ('stm32f103xb_if',                              False,      0x0000,     "bin"       ),
+    ('lpc11u35_new_stm32l475_if',                   False,      0x0000,     "bin"       ),  # TODO
 }
 
 # Add new HICs here
@@ -200,6 +201,7 @@ SUPPORTED_CONFIGURATIONS = [
     (   0x0468,     VENDOR_TO_FAMILY('Stub', 1),        'lpc11u35_mtb_stm32l475_if',                None,               None                                    ), # TODO - set target when mbed-os supports this
     (   0x0469,     VENDOR_TO_FAMILY('Stub', 1),        'lpc11u35_mtb_stm32f439_if',                None,               None                                    ), # TODO - set target when mbed-os supports this
     (   0x0472,     VENDOR_TO_FAMILY('Nordic', 2),      'lpc11u35_mtb_aconno_acn52832_if',          None,               None                                    ), # TODO - set target when mbed-os supports this
+    (   0x0480,     VENDOR_TO_FAMILY('NXP', 2),         'lpc11u35_new_stm32l475_if',                None,               'NXP-STM32L475'                         ), # TODO - set target when mbed-os supports this
     (   0x0700,     VENDOR_TO_FAMILY('Stub', 1),        'stm32f103xb_stm32f103rb_if',               'stm32f103xb_bl',   'ST-Nucleo-F103RB'                      ),
     (   0x0720,     VENDOR_TO_FAMILY('Stub', 1),        'stm32f103xb_stm32f401re_if',               'stm32f103xb_bl',   'ST-Nucleo-F401RE'                      ),
     (   0x0720,     VENDOR_TO_FAMILY('Stub', 1),        'stm32f103xb_stm32f072rb_if',               'stm32f103xb_bl',   'ST-Nucleo-F072RB'                      ),
@@ -337,6 +339,7 @@ BOARD_ID_SUPPORTING_PAGE_ERASE = set([
     0x0460,  # WISE-1570
     0x0468,  # lpc11u35_mtb_stm32l475_if
     0x0469,  # lpc11u35_mtb_stm32f439_if
+    0x0480,  # lpc11u35_new_stm32l475_if
     0x1101,  # Nordic-nRF52-DK
     0x1102,  # Nordic-nRF52840-DK
     0x2410,  # lpc11u35_mbed_cloud_connect_if

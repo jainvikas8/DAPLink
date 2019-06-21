@@ -1,0 +1,11 @@
+common:
+    macros:
+        - IO_CONFIG_OVERRIDE
+    includes:
+        - source/board/override_lpc11u35_reset
+    sources:
+        board:
+            - source/board/new_stm32l475.c
+        family:
+            - source/family/st/stm32l475vg/target.c
+#            - source/family/st/stm32l475vg/target_reset_l475.c
