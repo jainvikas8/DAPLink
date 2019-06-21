@@ -42,7 +42,7 @@ $ mbed config ARM_PATH <FULL_PATH_TO_ARMCC_FOLDER>
 
 ```
 $ venv/Scripts/activate   (For Linux)
-$ venv/Scripts/activate.bat   (For Windows)
+$ venv\Scripts\activate.bat   (For Windows)
 $ pip install -r requirements.txt
 ```
 
@@ -96,6 +96,7 @@ mbed-cli is included in `requirements.txt`, so it will be installed automaticall
 your development environment using the steps described above.
 
 ### `tools/mbedcli_compile.py` script
+Example : tools/mbedcli_compile.py <project name>
 Arguments
 ```
 positional arguments:
